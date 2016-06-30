@@ -1,3 +1,4 @@
+@charset "utf8";
 /**************************************************
 说明：
 1：我们建议你通过只改变css的方式来制作新的皮肤模板。当然，页面的部分代
@@ -98,31 +99,29 @@ a:active {
 /*****home和头部开始**************************/
 #home {
 	margin: 0 auto;
-	width:95%;
 	min-width: 930px;
 }
 #header {
-	border-top: 4px solid black;
-	border-bottom: 1px solid black;
-	padding-bottom: 5px;
-	margin-top: 10px;
+	height: 30px;
 }
 #blogTitle {
-	height: 60px;
-	clear: both;
+	height: 100%;
+	width: 30%;
+	float: left;
+	/* clear: both; */
 }
 #blogTitle h1 {
 	font-size: 150%;
 	font-weight: bold;
 	line-height: 1.5em;
 	margin-left: 1em;
-	margin-top: 10px;
-	width: 50%;
+	/* margin-top: 10px; */
+	/* width: 50%; */
 	float: left;
 }
 #blogTitle h2 {
-	margin-left: 4em;
-	line-height: 1.5em;
+	margin-left: 1em;
+	line-height: 3.5em;
 	width: 50%;
 	float: left;
 }
@@ -131,8 +130,9 @@ a:active {
 }
 #navigator {
 	background-color: black;
-	height: 30px;
-	clear: both;
+	height: 100%;
+	width: 70%;
+	float: right;
 }
 #navList {
 	min-height: 30px;
