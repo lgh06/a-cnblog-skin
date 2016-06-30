@@ -6,6 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta id="metaKeywords" name="keywords" content="博客,博客园,博客皮肤,博客园皮肤" />
 <link id="MainCss" type="text/css" rel="stylesheet" href="style.css" />
+<script src="http://lib.sinaapp.com/js/jquery/1.7/jquery.js" type="text/javascript" charset="utf-8"></script>
 </head>
 
 <body>
@@ -551,7 +552,70 @@
 		Copyright ©2008 杨正祎</div>
 	<!--end: footer --></div>
 <!--end: home 自定义的最大容器 -->
+<script type="text/javascript" src="http://js.tongji.linezing.com/2573873/tongji.js"></script><noscript><a href="http://www.linezing.com"><img src="http://img.tongji.linezing.com/2573873/tongji.gif" alt="" /></a></noscript>
 
+<script type="text/javascript">
+	$(function() {
+
+		$("<div id='class_gotop' style='position:fixed;right:10px;bottom:10px;z-index:100;display:none;'><a id='class_a_gotop' title='回到顶部' style='display:block;_display:none;height:50px;width:50px;background:url(\"http://res.c.hjfile.cn/app/images/go_top.gif\") repeat scroll 0 0 transparent;' href='javascript:'></a></div>").appendTo("body");
+
+		$('.postTitle a').hover(function() {
+			$(this).attr('title', $(this).text());
+		});
+
+		$(window).scroll(
+			
+			function() {
+				var scrollTop = $(window).scrollTop() || 0;
+				if ( scrollTop > 200 ) {
+					$("#class_gotop").fadeIn("slow");
+				} else {
+					$("#class_gotop").fadeOut("slow");
+				}
+				if ( scrollTop > 60 ) {
+					$("#header").addClass("fixed");
+					$("#main").addClass("margin-30");
+				} else {
+					$("#header").removeClass("fixed");
+					$("#main").removeClass("margin-30");
+				}
+
+			}
+
+		);
+
+		$("#class_a_gotop").click(function() {
+			$("html,body").animate({
+				scrollTop: 0
+			}, 600);
+
+		}).hover(
+			function() {
+				$(this).attr("style", "display:block;_display:none;height:50px;width:50px;background:url('http://res.c.hjfile.cn/app/images/go_top.gif') repeat scroll 0 50px transparent;");
+			},
+			function() {
+				$(this).attr("style", "display:block;_display:none;height:50px;width:50px;background:url('http://res.c.hjfile.cn/app/images/go_top.gif') repeat scroll 0 0 transparent;");
+			}
+		);
+
+	});
+</script>
+<script type="text/javascript">
+	var jiathis_config = {
+		data_track_clickback: true
+	};
+</script>
+<script type="text/javascript" src="http://v2.jiathis.com/code/jiathis_r.js?btn=r3.gif&uid=1518937" charset="utf-8"></script>
+<script>
+	var __css = " text-shadow: 0 1px 0 #ccc,0 2px 0 #c9c9c9,0 3px 0 #bbb,0 4px 0 #b9b9b9,0 5px 0 #aaa,0 6px 1px rgba(0,0,0,.1),0 0 5px rgba(0,0,0,.1),0 1px 3px rgba(0,0,0,.3),0 3px 5px rgba(0,0,0,.2),0 5px 5px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.2),0 9px 9px rgba(0,0,0,.15);font-size:2.5em;font-family:微软雅黑";
+	console.log("%c欢迎来到我的博客！", __css);
+	console.log("%c姓名：刘各欢", __css);
+	console.log("%cQQ：527902958", __css);
+	console.log("%c微博：@HapLeo", __css);
+	console.log("%c天津师范大学 软件工程 11级", __css);
+	console.log("%c深圳  响巢看看 工作中……", __css);
+	console.log("%c明天会更好。", __css);
+</script>
 </body>
 
 </html>

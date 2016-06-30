@@ -103,6 +103,7 @@ a:active {
 }
 #header {
 	height: 30px;
+	width: 100%;
 }
 #blogTitle {
 	height: 100%;
@@ -664,6 +665,26 @@ padding-right:16px;
 	color:#333;
 }
 /*****第四部分结束*******************************/
+
+
+
+
+
+.margin-30{
+	margin-top: 30px;
+}
+.fixed{
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: #404094;
+	color: white;
+	transition:all 1s linear;
+}
+.fixed h1 a.headermaintitle{
+	color:white;
+	transition:all 1s linear;
+}
 
 
 
