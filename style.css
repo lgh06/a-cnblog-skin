@@ -108,15 +108,12 @@ a:active {
 	height: 100%;
 	width: 30%;
 	float: left;
-	/* clear: both; */
 }
 #blogTitle h1 {
 	font-size: 150%;
 	font-weight: bold;
 	line-height: 1.5em;
 	margin-left: 1em;
-	/* margin-top: 10px; */
-	/* width: 50%; */
 	float: left;
 }
 #blogTitle h2 {
@@ -669,3 +666,44 @@ padding-right:16px;
 /*****第四部分结束*******************************/
 
 
+
+
+
+
+/*仅针对Dark模版*/
+.footer{
+	display:none;
+}  /*隐藏模版版权*/
+#profile_block{
+	display:none;
+}
+
+#google_ads_div_cnblogs_blogpost_bottom, #google_ads_div_cnblogs_blogpost_C2, #ad_under_comment2, .c_ad_block {
+	width:0px;
+	height:0px;
+	overflow:hidden;
+	line-height:60px;
+	display:block;
+	font-size:0px;
+}/* 隐藏评论下方广告 */
+
+.buryit {
+	display:none;
+} /* 隐藏 埋 图标 */
+
+.diggit {
+	position:relative;
+	left:50px;
+}/* 将推荐图标相对右移50 */
+#div_digg {
+	margin-right:10px;
+	width:140px;
+} /* 减小与右侧间距 扩大推荐部分的宽度 */
+.diggword {
+	margin-left:20px;
+}/*请对文章作评价左外边距20即右移20*/
+
+
+.menu,.catListTitle{
+	font-size:20px;
+}
